@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOGYwow</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <section id="home">
+        <div class="header">
+            <h1>BLOGYwow</h1>
+            <div class="nav">
+                <div class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#Blogs">Blogs</a>
+                    <a href="#stories">Stories</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search" onclick="searchGoogle()"></i>
+                    <input type="text" id="search-input" placeholder="Search">
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="filter-bar">
+                <div>
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="popular">Popular</option>
+                        <option value="healthy">Healthy</option>
+                        <option value="recommended">Recommended</option>
+                    </select>
+                </div>
+              
+            </div>
+            
+            <h2 class="catchy-line">Satisfy Every Craving: Cook, Share, and Enjoy on BLOGYwow!</h2>
+        </div>
+        <div class="recipes">
+            <div class="recipe" onclick="openRecipePage('https://www.vegrecipesofindia.com/tomato-soup-recipe-restaurant-style/')">
+                <img alt="Grilled Cheese And Tomato Soup Bread Bowl" src="assets/image1.webp"/>
+                <p>Grilled Cheese And Tomato Soup Bread Bowl</p>
+            </div>
+            <div class="recipe" onclick="openRecipePage('https://simply-delicious-food.com/easy-tomato-soup-recipe/')">
+                <img alt="Tomato Soup With Grilled Cheese Croutons" src="assets/image2.webp"/>
+                <p>Tomato Soup With Grilled Cheese Croutons</p>
+            </div>
+            <div class="recipe" onclick="openRecipePage('https://littlesunnykitchen.com/grilled-cheese-and-tomato-soup/')">
+                <img alt="The Ultimate Grilled Cheese And Tomato Soup Bowl" src="assets/image3.webp"/>
+                <p>The Ultimate Grilled Cheese And Tomato Soup Bowl</p>
+            </div>
+            <div class="recipe" onclick="openRecipePage('https://simply-delicious-food.com/easy-tomato-soup-recipe/')">
+                <img alt="The Easiest Tomato Soup" src="assets/high-angle-tasty-tomato-cream-soup (1).jpg"/>
+                <p>The Easiest Tomato Soup</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="card" onclick="navigateTo('https://secretcopycatrestaurantrecipes.com/berns-steakhouse-the-three-amigos-cocktail-recipe/')">
+            <img alt="A plate of steak with sauce and broccoli" src="assets/image5.jpg"/>
+            <h2>Bern's Steak House</h2>
+            <p>Potenti tincidunt arcu euismod amet ac curabitur iaculis in ut aliquet.</p>
+        </div>
+        <div class="card" onclick="navigateTo('https://mykoreankitchen.com/')">
+            <img alt="A table with various Korean dishes including bibimbap and kimchi" src="assets/image6.jpg"/>
+            <h2>Eewak Korean Restaurant</h2>
+            <p>Tristique in ornare lectus facilisis diam libero, eros sit scelerisque pulvinar dui.</p>
+        </div>
+        <div class="card" onclick="navigateTo('https://afrifoodnetwork.com/articles/vegan-ramadan-recipes/')">
+            <img alt="A plate of vegan food with avocado , poached egg, and vegetables" src="assets/image7.jpg"/>
+            <h2>The Ramban Vegan House</h2>
+            <p>Iaculis morbi id maecenas mi amet, mi ut dolor aenean id justo.</p>
+        </div>
+    </div>
+
+    <section id="Blogs">
+        <div class="container">
+            <div class="main-content">
+                <div id="blog-post-container">
+                    <!-- Blog posts will be loaded here -->
+                </div>
+                <div class="blog-post-form">
+                    <input id="blog-name" placeholder="Your Name" type="text"/>
+                    <input id="blog-title" placeholder="Blog Title" type="text"/>
+                    <textarea id="blog-content" placeholder="Blog Content" rows="5"></textarea>
+                    <input id="blog-image-file" type="file"/>
+                    <button onclick="postBlog()">Post Blog</button>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="item" onclick="navigateTo('https://insanelygoodrecipes.com/family-dinner-ideas/')">
+                    <img alt="A family dinner with a variety of dishes on the table" src="assets/image9.jpg"/>
+                    <div>
+                        <h2>Family Dinner - Latea pulvinar scelerisque diam tempus facilisi</h2>
+                        <p>Enim imperdiet fames nisl, purus et diam aliquet</p>
+                    </div>
+                </div>
+                <div class="item" onclick="navigateTo('https://www.thehappyhomelife.com/dinner-ideas-for-friends/')">
+                    <img alt="A delicious dish with a variety of vegetables and meat" src="assets/image10.jpg"/>
+                    <div>
+                        <h2>Friends Dinner Blog</h2>
+                        <p>Enjoying the best meal of the day with friends</p>
+                    </div>
+                </div>
+                <div class="item" onclick="navigateTo('https://www.thehappyhomelife.com/dinner-ideas-for-friends/')">
+                    <img alt="A variety of dishes with different types of food" src="assets/image11.jpg"/>
+                    <div>
+                        <h2>Tempus quis ac viverra condimentum sit nulla viverra</h2>
+                        <p>Enim imperdiet fames nisl, purus et diam aliquet</p>
+                    </div>
+                </div>
+                <div class="item" onclick="navigateTo('https://www.thehappyhomelife.com/dinner-ideas-for-friends/')">
+                    <img alt="A gourmet dish with a variety of ingredients" src="assets/image12.jpg"/>
+                    <div>
+                        <h2>Quis mauris egestas enim urna dictum</h2>
+                        <p>Enim imperdiet fames nisl, purus et diam aliquet</p>
+                    </div>
+                </div>
+                <a class="view-all" href="https://tasty.co/">VIEW ALL VIDEOS</a>
+            </div>
+        </div>
+    </section>
+ 
+
+ <div id="stories">
+    <div class="story-container-wrapper" id="storyWrapper">
+        <div class="story-container">
+            <div class="story-card" id="add-story-card">
+                <img alt="Person taking a photo of food" src="assets\female-vlogger-home-taking-pictures-with-camera.jpg"/>
+                <div class="story-text">
+                    Add to Story
+                    <i class="fas fa-plus" onclick="showUploadContainer()"></i>
+                </div>
+            </div>
+            <div class="story-card" id="your-story-card" onclick="openStoryModal('your-story-img', 'Your Story', 'assets\cooking-vlogger.jpg')">
+                <img alt="Person cooking in the kitchen" id="your-story-img" src="assets\cooking-vlogger.jpg"/>
+                <img alt="Profile picture" class="profile-pic" src="assets\cooking-vlogger.jpg" onclick="uploadProfilePic(event)"/>
+                <div class="story-text">
+                    Your Story
+                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+                </div>
+                <i class="fas fa-trash delete-btn" onclick="deleteStory(event)"></i>
+            </div>
+            <div class="story-card" onclick="openStoryModal('story1', 'Justin Bergam', 'assets\female-vlogger-home-taking-pictures-with-camera.jpg')">
+                <img alt="Person eating pizza with friends" id="story1" src="assets\portrait-young-woman-cooking-some-food-her-video-blog-home.jpg"/>
+                <img alt="Profile picture" class="profile-pic" src="assets\portrait-young-woman-cooking-some-food-her-video-blog-home.jpg"/>
+                <div class="story-text">
+                    Justin Bergam
+                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+                </div>
+            </div>
+            <div class="story-card" onclick="openStoryModal('story2', 'Ring Concierge', 'assets\image11.jpg')">
+                <img alt="People cooking together" id="story2" src="assets\smiley-women-taking-selfie-while-eating.jpg"/>
+                <img alt="Profile picture" class="profile-pic" src="assets\smiley-women-taking-selfie-while-eating.jpg"/>
+                <div class="story-text">
+                    Ring Concierge
+                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+                </div>
+            </div>
+            <div class="story-card" onclick="openStoryModal('story3', 'Victoria Jaskie', 'assets\food-blogger-cute-fitness-cook-recording-video-social-media-happy-with-bowl.jpg')">
+                <img alt="Person cooking and using phone" id="story3" src="assets\food-blogger-cute-fitness-cook-recording-video-social-media-happy-with-bowl.jpg"/>
+                <img alt="Profile picture" class="profile-pic" src="assets\portrait-young-woman-cooking-some-food-her-video-blog-home.jpg"/>
+                <div class="story-text">
+                    Victoria Jaskie
+                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+                </div>
+            </div>
+            <div class="story-card" onclick="openStoryModal('story4', 'John Doe', 'assets\medium-shot-women-cooking-together.jpg')">
+                <img alt="Person cooking in the kitchen" id="story4" src="assets\medium-shot-women-cooking-together.jpg"/>
+                <img alt="Profile picture" class="profile-pic" src="assets\medium-shot-women-cooking-together.jpg"/>
+                <div class="story-text">
+                    John Doe
+                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+                </div>
+            </div>
+            <div class="story-card" onclick="openStoryModal('story5', 'Jane Smith', 'assets\person-enjoying-food-restaurant.jpg')">
+                <img alt="People cooking together" id="story5" src="assets\person-enjoying-food-restaurant.jpg"/>
+                <img alt="Profile picture" class="profile-pic" src="assets\person-enjoying-food-restaurant.jpg"/>
+                <div class="story-text">
+                    Jane Smith
+                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+                </div>
+            </div>
+            <div class="story-card" onclick="openStoryModal('story6', 'Alice Johnson', 'assets\smiley-women-taking-selfie-while-eating.jpg')">
+                <img alt="Bowl of soup with croutons" id="story6" src="assets\women-making-vlog-while-preparing-food.jpg"/>
+                <img alt="Profile picture" class="profile-pic" src="assets\women-making-vlog-while-preparing-food.jpg"/>
+                <div class="story-text">
+                    Alice Johnson
+                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+                </div>    
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="upload-container" id="upload-container">
+        <span class="close-btn" onclick="closeUploadContainer()">✖</span>
+        <input type="file" id="file-input"/>
+        <button onclick="uploadStory()">Upload Story</button>
+    </div> 
+
+    <div id="image-modal" class="modal hidden">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+    
+
+
+    <div class="story-modal" id="story-modal">
+        <div class="story-modal-content" id="story-modal-content">
+            <span class="close-btn" onclick="closeStoryModal()">✖</span>
+            <div class="story-text" id="modal-story-text">
+                <span id="modal-story-name"></span>
+                <i class="fas fa-heart" onclick="toggleLike(this)"></i>
+            </div>
+        </div>
+        <div class="scroll-bar" id="scrollBar">
+            <div class="scroll-thumb" id="scrollThumb"></div>
+            </div>
+    </div>
+</div>
+
+    
+
+    <div class="container">
+        <h1>JOIN OUR EAT WELL, BE WELL CULTURE.</h1>
+        <p>Stay up-to-date with our new openings, upcoming events, seasonal specials, and promotions.</p>
+        <div class="email-signup">
+            <input type="email" id="email" placeholder="Enter your email address">
+            <button onclick="showThankYouMessage()">SIGN ME UP!</button>
+        </div>
+        <div class="thank-you-message" id="thankYouMessage" style="display: none;">Thank you for signing up!</div>
+    </div>
+
+    <section id="contact">
+        <div class="footer ">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="nav-links">
+                <a href="#home">HOME</a>
+                <a href="#Blogs">MENU</a>
+                <a href="#stories">STORY</a>
+                <a href="#contact">BLOG</a>
+            </div>
+            <div class="bottom-text">
+                <p>HEALTHY FAST-CASUAL FOOD, CRAFTED WITH <span>♥</span> IN BLOGGYWow</p>
+                <p>© KITCHEN & PRESS | ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+        <div class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <script>
+            function showThankYouMessage() {
+                var emailInput = document.getElementById('email');
+                var thankYouMessage = document.getElementById('thankYouMessage');
+                if (emailInput.value) {
+                    thankYouMessage.style.display = 'block';
+                } else {
+                    alert('Please enter your email address.');
+                }
+            }
+        </script>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
