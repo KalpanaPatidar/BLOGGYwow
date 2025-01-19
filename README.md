@@ -1,4 +1,4 @@
-# BLOGGYwow
+# BLOGYwow
 
 1. Introduction
 
