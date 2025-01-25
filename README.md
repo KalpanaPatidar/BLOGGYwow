@@ -1,4 +1,4 @@
-# BLOGYwow
+# BLOGGYwow
 
 1. Introduction
 
@@ -21,17 +21,11 @@
 
     Post Your Own Blog: Share your food blogs, including images and videos, to connect with the community.
 
-    Stories for Fun: Post daily stories for entertainment and share moments with others.
-
     Explore Community Content: View blogs and stories shared by other users.
-
-    Personalized Profile: Upload a profile picture to make your account unique.
 
     Filter Recipes: Use the filter bar to easily find recipes based on your preferences.
 
     Subscribe for Updates: Enter your email to subscribe and stay updated with the latest content.
-
-    Story Management: Post new stories using the "+" icon and delete them with a single click.
 
     Interactive Blogging: Write reviews about restaurant food or share your unique cooking experiences.
 
@@ -53,19 +47,9 @@
 
     Share your recipes or blogs by clicking on "Post Story" and uploading relevant files (images/videos).
 
-    Manage Stories:
-
-    Add a new story by clicking on the "+" icon.
-
-    Delete stories or posts by clicking on the "Delete" button.
-
     Subscribe:
 
     Enter your email address to subscribe and receive updates.
-
-    Upload a Profile Picture:
-
-    Personalize your profile by uploading a profile picture.
 
 4.Technical Details
 
@@ -75,7 +59,7 @@
 
 JavaScript:
 
-    Enabled functionalities like posting blogs, uploading stories, uploading profile pictures, subscribing, and searching.
+    Enabled functionalities like posting blogs, subscribing, and searching.
 
     Local storage is used to save user data and posts.
 
