@@ -58,7 +58,7 @@
                 <p>The Ultimate Grilled Cheese And Tomato Soup Bowl</p>
             </div>
             <div class="recipe" onclick="openRecipePage('https://simply-delicious-food.com/easy-tomato-soup-recipe/')">
-                <img alt="The Easiest Tomato Soup" src="assets/high-angle-tasty-tomato-cream-soup (1).jpg"/>
+                <img alt="The Easiest Tomato Soup" src="assets\image6.webp"/>
                 <p>The Easiest Tomato Soup</p>
             </div>
         </div>
@@ -130,109 +130,7 @@
         </div>
     </section>
  
-
- <div id="stories">
-    <div class="story-container-wrapper" id="storyWrapper" >
-        <div class="story-container">
-            <div class="story-card" id="add-story-card">
-                <img alt="Person taking a photo of food" src="assets\female-vlogger-home-taking-pictures-with-camera.jpg" loading="eager"/>
-                <div class="story-text">
-                    Add to Story
-                    <i class="fas fa-plus" onclick="showUploadContainer()"></i>
-                </div>
-            </div>
-            <div class="story-card" id="your-story-card" onclick="openStoryModal('your-story-img', 'Your Story', 'assets\cooking-vlogger.jpg')">
-                <img alt="Person cooking in the kitchen" id="your-story-img" src="assets\cooking-vlogger.jpg" loading="eager"/>
-                <img alt="Profile picture" class="profile-pic" src="assets\cooking-vlogger.jpg" onclick="uploadProfilePic(event)" loading="eager"/>
-                <div class="story-text">
-                    Your Story
-                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
-                </div>
-                <i class="fas fa-trash delete-btn" onclick="deleteStory(event)"></i>
-            </div>
-            <div class="story-card" onclick="openStoryModal('story1', 'Justin Bergam', 'assets\female-vlogger-home-taking-pictures-with-camera.jpg')">
-                <img alt="Person eating pizza with friends" id="story1" src="assets\portrait-young-woman-cooking-some-food-her-video-blog-home.jpg" loading="eager"/>
-                <img alt="Profile picture" class="profile-pic" src="assets\portrait-young-woman-cooking-some-food-her-video-blog-home.jpg" loading="eager"/>
-                <div class="story-text">
-                    Justin Bergam
-                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
-                </div>
-            </div>
-            <div class="story-card" onclick="openStoryModal('story2', 'Ring Concierge', 'assets\image11.jpg')">
-                <img alt="People cooking together" id="story2" src="assets\smiley-women-taking-selfie-while-eating.jpg" loading="eager"/>
-                <img alt="Profile picture" class="profile-pic" src="assets\smiley-women-taking-selfie-while-eating.jpg" loading="eager"/>
-                <div class="story-text">
-                    Ring Concierge
-                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
-                </div>
-            </div>
-            <div class="story-card" onclick="openStoryModal('story3', 'Victoria Jaskie', 'assets\food-blogger-cute-fitness-cook-recording-video-social-media-happy-with-bowl.jpg')">
-                <img alt="Person cooking and using phone" id="story3" src="assets\food-blogger-cute-fitness-cook-recording-video-social-media-happy-with-bowl.jpg" loading="eager"/>
-                <img alt="Profile picture" class="profile-pic" src="assets\portrait-young-woman-cooking-some-food-her-video-blog-home.jpg" loading="eager"/>
-                <div class="story-text">
-                    Victoria Jaskie
-                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
-                </div>
-            </div>
-            <div class="story-card" onclick="openStoryModal('story4', 'John Doe', 'assets\medium-shot-women-cooking-together.jpg')">
-                <img alt="Person cooking in the kitchen" id="story4" src="assets\medium-shot-women-cooking-together.jpg" loading="eager"/>
-                <img alt="Profile picture" class="profile-pic" src="assets\medium-shot-women-cooking-together.jpg" loading="eager"/>
-                <div class="story-text">
-                    John Doe
-                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
-                </div>
-            </div>
-            <div class="story-card" onclick="openStoryModal('story5', 'Jane Smith', 'assets\person-enjoying-food-restaurant.jpg')">
-                <img alt="People cooking together" id="story5" src="assets\person-enjoying-food-restaurant.jpg" v/>
-                <img alt="Profile picture" class="profile-pic" src="assets\person-enjoying-food-restaurant.jpg" loading="eager"/>
-                <div class="story-text">
-                    Jane Smith
-                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
-                </div>
-            </div>
-            <div class="story-card" onclick="openStoryModal('story6', 'Alice Johnson', 'assets\smiley-women-taking-selfie-while-eating.jpg')">
-                <img alt="Bowl of soup with croutons" id="story6" src="assets\women-making-vlog-while-preparing-food.jpg" loading="eager"/>
-                <img alt="Profile picture" class="profile-pic" src="assets\women-making-vlog-while-preparing-food.jpg" loading="eager"/>
-                <div class="story-text">
-                    Alice Johnson
-                    <i class="fas fa-heart" onclick="toggleLike(this)"></i>
-                </div>    
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="upload-container" id="upload-container">
-        <span class="close-btn" onclick="closeUploadContainer()">✖</span>
-        <input type="file" id="file-input"/>
-        <button onclick="uploadStory()">Upload Story</button>
-    </div> 
-
-    <div id="image-modal" class="modal hidden">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modal-image">
-        <div id="caption"></div>
-    </div>
-    
-
-
-    <div class="story-modal" id="story-modal">
-        <div class="story-modal-content" id="story-modal-content">
-            <span class="close-btn" onclick="closeStoryModal()">✖</span>
-            <div class="story-text" id="modal-story-text">
-                <span id="modal-story-name"></span>
-                <i class="fas fa-heart" onclick="toggleLike(this)"></i>
-            </div>
-        </div>
-        <div class="scroll-bar" id="scrollBar">
-            <div class="scroll-thumb" id="scrollThumb"></div>
-            </div>
-    </div>
-</div>
-
-    
-
-    <div class="container">
+<div class="container">
         <h1>JOIN OUR EAT WELL, BE WELL CULTURE.</h1>
         <p>Stay up-to-date with our new openings, upcoming events, seasonal specials, and promotions.</p>
         <div class="email-signup">
@@ -271,7 +169,7 @@
                 if (emailInput.value) {
                     thankYouMessage.style.display = 'block';
                 } else {
-                    alert('Please enter your email address.');
+                    alert('Please enter your email address');
                 }
             }
         </script>
