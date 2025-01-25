@@ -145,8 +145,6 @@ function clearBlogInputs() {
 function deleteBlog(blogPost) {
     const blogPostContainer = document.getElementById('blog-post-container');
     blogPostContainer.removeChild(blogPost);
-
-    // Update localStorage
     const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
     const updatedBlogPosts = blogPosts.filter(post => post.title !== blogPost.querySelector('h1').textContent);
     localStorage.setItem('blogPosts', JSON.stringify(updatedBlogPosts));
@@ -266,54 +264,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var modal = document.getElementById('image-modal');
-    var modalImg = document.getElementById('modal-image');
-    var captionText = document.getElementById('caption');
-
-    var storyCards = document.querySelectorAll('.story-card img');
-    storyCards.forEach(function(img) {
-        img.addEventListener('click', function() {
-            modal.style.display = 'block';
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        });
-    });
-
-    var closeModal = function() {
-        modal.style.display = 'none';
-    };
-
-    document.querySelector('.close').addEventListener('click', closeModal);
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    var modal = document.getElementById('image-modal');
-    var modalImg = document.getElementById('modal-image');
-    var captionText = document.getElementById('caption');
-
-    var storyCards = document.querySelectorAll('.story-card img');
-    storyCards.forEach(function(img) {
-        img.addEventListener('click', function() {
-            modal.style.display = 'block';
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        });
-    });
-
-    var closeModal = function() {
-        modal.style.display = 'none';
-    };
-
-    document.querySelector('.close').addEventListener('click', closeModal);
-});
-
-
-function deleteStory(event) {
-    event.stopPropagation(); 
-    var storyCard = event.target.closest('.story-card');
-    var storyImg = storyCard.querySelector('img');
-    storyImg.src = 'path/to/default-image.jpg'; 
-}
 
